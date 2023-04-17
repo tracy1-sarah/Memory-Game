@@ -1,0 +1,231 @@
+.card{
+    height: 73px;
+    width: 73px;
+    margin: 0.2rem 0.2rem;
+    background: rgba(46, 61, 73, 0.9);
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      // styles that apply only to screens smaller than the breakpoint
+      height: 62px;
+      width: 62px;
+    }
+}
+
+.back {
+    background: #2e3d49;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+.open{
+    transform: rotateY(0);
+    background: #86a9e3; /*#02b3e4*/
+    cursor: default;
+    animation-name: flipInY;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: 0.75s;
+}
+
+.show {
+    font-size: 33px;
+  }
+
+.match {
+    cursor: default;
+    background: #fda214;
+    font-size: 33px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: 0.75s;
+}  
+
+.unMatch {
+    animation-name: pulse;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: 0.75s;
+    cursor: default;
+    background: #ffb366;
+    font-size: 33px;
+}
+
+.btn-rectangle{
+  height: 4em;
+  width: 5em;
+
+  @media (max-width: 767px) {
+    // styles that apply only to screens smaller than the breakpoint
+    height: 4em;
+    width: 5em ;
+  }
+  
+  .inner{
+    border-radius: 8px;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    p{
+      font-size: small;
+    }
+
+    h6{
+      font-size: large;
+    }
+  }
+}
+
+
+.btn-cylinder{
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  h6{
+    font-size: medium;
+  }
+}
+
+.active{
+  background: #FDA214;
+  &:hover{
+    background: #da8b0b;
+  }
+}
+
+.inactive{
+  background: #DFE7EC;
+
+  p{
+    color: #7191A5;
+  }
+
+  h6{
+    color: #304859;
+  }
+}
+
+.deep{
+  background: #304859;
+}
+
+.light{
+  background: #BCCED9;
+  &:hover{
+    background: #6395B8;
+  }
+}
+
+.selected{
+  background: #152938;
+}
+  
+
+  @keyframes flipInY {
+    from {
+      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+  
+    to {
+      transform: perspective(400px);
+    }
+  }
+  
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+//   @media screen and (min-width: 1024px) {
+//     .deck {
+//       width: 42.5em; /*680px*/
+//       min-height: 42.5em; /*680px*/
+//       padding: 2em; /*32px*/
+//       border-radius: 10px;
+//       box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+//       display: flex;
+//       flex-wrap: wrap;
+//       justify-content: space-around;
+//       align-items: center;
+//       /* margin: 0 0 3em; */
+//       margin-top: 85px;
+//       margin-bottom: 105px;
+      
+//     }
+// }
+  

@@ -1,0 +1,140 @@
+.show-modal {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    border-radius: 10rem;
+    cursor: pointer;
+  }
+  
+  .results h1 {
+    margin-top: 32px;
+    height: 30px;
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  
+    text-align: center;
+  
+    color: #152938;
+  }
+  
+  .endGame-btn button {
+    background-color: #bcced9;
+    border: none;
+    margin-bottom: 8px;
+    width: 279px;
+    height: 48px;
+    color: #304859;
+  }
+  
+  
+  .above div {
+      width: 200px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h5{
+        font-size: small;
+      }
+
+      h3{
+        font-size: medium;
+      }
+    }
+    
+    .above {
+        margin-bottom: 10px;
+    }
+    
+    .below{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+  .left {
+    height: 16px;
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7191a5;
+  }
+  
+  .right {
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    color: #304859;
+  }
+  
+  
+  .results h4 {
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    height: 17px;
+    color: #7191a5;
+    margin-bottom: 24px;
+  }
+  
+  .endGame-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 327px;
+    height: 376px;
+  
+    background-color: white;
+    /* padding: 6rem; */
+    border-radius: 10px;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }

@@ -1,0 +1,93 @@
+
+
+#main{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 654px;
+height: 100vh;
+margin: auto;
+padding-top: 4rem;
+background-color: #152938;
+
+
+@media (max-width: 767px) {
+    // styles that apply only to screens smaller than the breakpoint
+    height: 687px;
+    width: 420px;
+    padding-top: 0.5rem;
+  }
+
+h2{
+height: 50px;
+left: 38.23%;
+right: 38.38%;
+top: calc(50% - 50px/2 - 318.5px);
+margin: 0 auto;
+width: -moz-fit-content;
+width: fit-content;
+font-family: 'Atkinson Hyperlegible';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 50px;
+color: #FCFCFC;
+margin-bottom: 2rem;
+}
+
+.sub-main{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+    width: 540px;
+    background: #FCFCFC;
+    border-radius: 20px;
+
+
+    @media (max-width: 767px) {
+        // styles that apply only to screens smaller than the breakpoint
+        height: 460px;
+        width: 500px;
+        padding: 0.5rem;
+      }
+}
+
+}
+
+#subselection-main{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+    @media (max-width: 767px) {
+        // styles that apply only to screens smaller than the breakpoint
+        
+        width: 480px;
+        display: flex;
+        justify-content: center;
+        
+      }
+
+    h3{
+        color:#7191A5;
+        ;
+    }
+
+    .buttons-row{
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+
+        @media (max-width: 767px) {
+            // styles that apply only to screens smaller than the breakpoint
+           
+            width: 480px;
+          }
+    }
+}
